@@ -4,6 +4,9 @@ This folder contains **`deep_neural_networkF.py`**, a variant of the week 6 pric
 
 ## What the model does
 
+
+## What the model does
+
 1. **Text → sparse vector**  
    `HashingVectorizer` turns each `summary` string into a fixed-size feature vector (hashing trick: no vocabulary storage, fast for demos).
 
