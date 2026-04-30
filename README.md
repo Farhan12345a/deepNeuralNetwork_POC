@@ -1,6 +1,6 @@
 # Deep neural network (text → price)
 
-This folder contains **`deep_neural_networkF.py`**, a variant of the week 6 pricer **`DeepNeuralNetwork`**: a **stack of residual MLP blocks** that maps **bag-of-words–style text features** to a **single positive scalar** (here: a mock “price”).
+This folder contains **`deep_neural_networkF.py`**, **A stack of residual MLP blocks** that maps **bag-of-words–style text features** to a **single positive scalar** (here: a mock “price”).
 
 ## What the model does
 
