@@ -24,14 +24,6 @@ This folder contains **`deep_neural_networkF.py`**, **A stack of residual MLP bl
 5. **Inference**  
    Predict normalized log → invert z-score → `exp` → subtract 1 → clamp at zero.
 
-## How this differs from `week6/pricer/deep_neural_network.py`
-
-| Topic | Original | This file (`F`) |
-|--------|----------|------------------|
-| Progress bar | `tqdm.notebook` | `tqdm.auto` (notebook + terminal) |
-| Model size | Fixed defaults | Constructor kwargs: `n_features`, `num_layers`, `hidden_size`, `batch_size`, `dropout`, `seed` |
-| Inference | Only `item` with `.summary` | Also `inference_from_summary(str)` |
-| `load()` | `map_location` hard-coded `"mps"` | Uses runner’s `self.device` |
 
 ## Layout
 
@@ -54,5 +46,3 @@ From this directory (`deep_neural_network/`):
 ```bash
 python python/demo.py
 ```
-
-The demo uses a **small** network on CPU so it finishes quickly. For course-scale training, increase `n_features`, `hidden_size`, and `num_layers` toward the originals in `week6/pricer/deep_neural_network.py`.
