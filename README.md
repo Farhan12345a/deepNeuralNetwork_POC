@@ -24,7 +24,8 @@ This folder contains **`deep_neural_networkF.py`**, **A stack of residual MLP bl
 5. **Inference**  
    Predict normalized log → invert z-score → `exp` → subtract 1 → clamp at zero.
 
-
+- Inspired by Ed Donner's LLM Engineering course on Udemy
+  
 ## Layout
 
 | Path | Role |
